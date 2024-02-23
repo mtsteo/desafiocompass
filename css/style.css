@@ -160,9 +160,8 @@ html {
 .carrousel {
   text-align: center;
   width: 100vw;
-  height: 100vh;;
+  height: 100vh;
 }
-
 
 .editor {
   margin-top: 5%;
@@ -193,13 +192,12 @@ html {
 }
 
 .editorGrid img {
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 
 .editorGrid img:hover {
   transform: scale(1.1);
 }
-
 
 .editorGrid {
   margin-top: 5%;
@@ -246,15 +244,13 @@ html {
   margin: 5%;
 }
 
-
 .imageCard {
-  height: 20   rem;
-  transition: transform .2s;
+  height: 20 rem;
+  transition: transform 0.2s;
 }
 
 .imageCard:hover {
   transform: scale(1.1);
-
 }
 
 .preco {
@@ -276,7 +272,6 @@ html {
   margin-top: 5%;
 }
 
-
 .preco .originalPrice {
   color: blanchedalmond;
   margin: 0 5%;
@@ -286,10 +281,9 @@ html {
   margin: 0;
 }
 
-.colorsProd{
+.colorsProd {
   text-align: center;
 }
-
 
 .carousel_2 {
   text-align: center;
@@ -301,3 +295,48 @@ html {
 .carousel-item img {
   width: 100vw;
 }
+
+.summer {
+  display: flex;
+  margin-top: 5%;
+  width: 100vw;
+  height: 100vh;
+}
+
+.summerDiv {
+  margin: 0 5%;
+  display: flex;
+}
+
+.descriptionDiv {
+  margin-left: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.summerDescription {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 30em;
+  height: 30em;
+}
+
+.summerDescription > h5 {
+  color: #bdbdbd;
+  font-size: 16px;
+}
+
+.summerDescription h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.summerDescription h4 {
+  color: #737373;
+  font-size: 20px;
+  font-weight: 600;
+  ;
+}
+
