@@ -6,6 +6,10 @@
   font-weight: 400;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .social {
   color: aliceblue;
   background-color: rgba(37, 43, 66, 1);
