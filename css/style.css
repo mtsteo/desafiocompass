@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.social {
+  color: aliceblue;
+  background-color: rgba(37, 43, 66, 1);
+  height: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+}
+
+.contact {
+  margin-left: 5%;
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+}
+
+.contact .phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5%;
+}
+
+.phone > img {
+  margin: 5px;
+}
+.phone > p {
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.mail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mail > img {
+  margin: 5px;
+}
+
+.mail > p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.phrase {
+  width: 30%;
+}
+
+.phrasetext > p {
+  display: flex;
+  margin: 0;
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.socialmedia {
+  margin-right: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialmedia > p {
+  display: flex;
+  margin: 0;
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.menu {
+  column-count: 3;
+  background-color: white;
+  display: flex;
+  position: relative;
+  gap: 5%px;
+  align-items: center;
+  height: 4em;
+}
+
+.menu .logo {
+  margin-left: 5%;
+  width: 10%;
+}
+.menu .nav {
+  width: 50%;
+  margin-left: 5%;
+}
+
+.menunav {
+  display: flex;
+}
+.menunav > li {
+  margin: 5%;
+}
+.menunav > li > a {
+  color: #737373;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.menunav > li > select {
+  border: none;
+  font-size: 14px;
+}
+
+.sign {
+  margin-left: 15%;
+  margin-right: 5%;
+}
+
+.sign > ul {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign > ul > li {
+  list-style: none;
+}
+
+.signInUp {
+  display: flex;
+  gap: 10px;
+  color: #23a6f0;
+}
+
+.signInUp > a {
+  color: #23a6f0;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.carrousel {
+  width: 100vw;
+  height: 85vh;
+}
+
+.carrousel .carrousel-t {
+  width: 100%;
+  height: 90%;
+}
+.carrousel img {
+  width: 100vw;
+  height: 768px;
+}
+
+.editor {
+  width: 100vw;
+  height: 100vh;
+}
+
+.editor .editorTitle {
+  margin-top: 5%;
+  text-align: center;
+}
+
+.editor .editorTitle > h3 {
+  font-weight: 600;
+}
+
+.photo1 {
+  grid-area: photo1;
+}
+.photo2 {
+  grid-area: photo2;
+}
+.photo3 {
+  grid-area: photo3;
+}
+.photo4 {
+  grid-area: photo4;
+}
+
+.editorGrid {
+  margin-top: 5%;
+  display: grid;
+  justify-content: center;
+  grid-template-areas:
+    "photo1 photo2 photo3"
+    "photo1 photo2 photo4";
+  gap: 20px;
+}
+
+.bestsellers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.bestsellersTitle {
+  margin-top: 20%;
+  text-align: center;
+}
+
+.bestsellersCards {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.bestsellersCards div {
+  width: 239px;
+  height: 615px;
+  margin: 30px;
+  border: 0px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+ .preco {
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+ }
+
+ .nameProd {
+  font-size: 16px;
+  margin-top: 10%;
+  font-weight: 600;
+ }
+
+ .descriptionProd {
+  font-size: 14px;
+  color: #737373;
+  margin-top: 5%;
+ }
+
+
+
+ .preco .originalPrice {
+  color: blanchedalmond;
+  margin: 0 5%;
+ }
+ .preco .discountPrice {
+  color: #23856D;
+  margin: 0;
+
+ }
