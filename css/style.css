@@ -158,8 +158,9 @@ html {
 }
 
 .carrousel {
+  text-align: center;
   width: 100vw;
-  height: 85vh;
+  height: 100vh;;
 }
 
 .carrousel .carrousel-t {
@@ -178,7 +179,7 @@ html {
 }
 
 .editor .editorTitle {
-  margin-top: 15%;
+  margin-top: 10%;
   text-align: center;
 }
 
@@ -295,4 +296,16 @@ html {
 
 .colorsProd{
   text-align: center;
+}
+
+
+.carousel_2 {
+  text-align: center;
+  margin-top: 5%;
+  width: 100vw;
+  height: 100vh;
+}
+
+.carousel-item img {
+  width: 100vw;
 }
