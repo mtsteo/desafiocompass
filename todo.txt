@@ -1,0 +1,5 @@
+finalizar botoes da summer section OK
+icone user no menu login
+divs nos banners do carrousel 
+divs nas imagens dagrid da section editors
+divs no banner dos segundo carousel 

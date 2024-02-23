@@ -8,6 +8,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .social {
@@ -337,6 +338,23 @@ html {
   color: #737373;
   font-size: 20px;
   font-weight: 600;
-  ;
 }
 
+.buyMoreButton {
+  color: white;
+  font-weight: 700;
+  border-radius: 5px;
+  height: 52px;
+  width: 151px;
+  background-color: #2DC071;
+  border: 0px;
+}
+.readMoreButton {
+  color: #2DC071;
+  font-weight: 700;
+  border-radius: 5px;
+  background-color: white;
+  height: 52px;
+  width: 171px;
+  border: 2px solid #2DC071;
+}
