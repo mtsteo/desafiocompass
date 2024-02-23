@@ -89,11 +89,9 @@
 }
 
 .menu {
-  column-count: 3;
   background-color: white;
   display: flex;
-  position: relative;
-  gap: 5%px;
+  justify-content: space-between;
   align-items: center;
   height: 4em;
 }
@@ -109,9 +107,10 @@
 
 .menunav {
   display: flex;
+  width: 100%;
 }
 .menunav > li {
-  margin: 5%;
+  margin: 20px;
 }
 .menunav > li > a {
   color: #737373;
