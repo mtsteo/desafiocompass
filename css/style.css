@@ -195,6 +195,15 @@
   grid-area: photo4;
 }
 
+.editorGrid img {
+  transition: transform .2s;
+}
+
+.editorGrid img:hover {
+  transform: scale(1.1);
+}
+
+
 .editorGrid {
   margin-top: 5%;
   display: grid;
