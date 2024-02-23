@@ -164,16 +164,17 @@
 }
 .carrousel img {
   width: 100vw;
-  height: 768px;
+  height: 100vh;
 }
 
 .editor {
+  margin-top: 5%;
   width: 100vw;
   height: 100vh;
 }
 
 .editor .editorTitle {
-  margin-top: 5%;
+  margin-top: 20%;
   text-align: center;
 }
 
@@ -205,6 +206,7 @@
 }
 
 .bestsellers {
+  margin-top: 20%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -219,8 +221,9 @@
 
 .bestsellersCards {
   width: 70%;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 colunas com largura igual */
+  grid-gap: 10px;
   justify-content: center;
   align-items: center;
 }
@@ -238,32 +241,29 @@
   justify-content: center;
   align-items: center;
 }
- .preco {
+.preco {
   margin-top: 0;
   display: flex;
   justify-content: center;
- }
+}
 
- .nameProd {
+.nameProd {
   font-size: 16px;
   margin-top: 10%;
   font-weight: 600;
- }
+}
 
- .descriptionProd {
+.descriptionProd {
   font-size: 14px;
   color: #737373;
   margin-top: 5%;
- }
+}
 
-
-
- .preco .originalPrice {
+.preco .originalPrice {
   color: blanchedalmond;
   margin: 0 5%;
- }
- .preco .discountPrice {
-  color: #23856D;
+}
+.preco .discountPrice {
+  color: #23856d;
   margin: 0;
-
- }
+}
