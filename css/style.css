@@ -154,7 +154,7 @@ html {
   color: #23a6f0;
 }
 
-.signInUp img{
+.signInUp img {
   width: 12px;
   height: 12px;
 }
@@ -178,7 +178,6 @@ html {
   margin-top: 15%;
 }
 
-
 .carousel1Description {
   display: flex;
   flex-direction: column;
@@ -188,19 +187,18 @@ html {
 
 .carousel1Description > h5 {
   font-size: 16px;
-  color: #FFFFFF;
-  ;
+  color: #ffffff;
 }
 
 .carousel1Description h1 {
   font-size: 50px;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .carousel1Description h4 {
   font-size: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .buyMoreButton {
@@ -222,37 +220,50 @@ html {
   font-weight: 600;
 }
 
-.photo1 {
-  grid-area: photo1;
-}
-.photo2 {
-  grid-area: photo2;
-}
-.photo3 {
-  grid-area: photo3;
-}
-.photo4 {
-  grid-area: photo4;
-}
-
-.editorGrid img {
-  transition: transform 0.2s;
-}
-
-.editorGrid img:hover {
-  transform: scale(1.1);
-}
-
-.editorGrid {
-  margin-top: 5%;
-  display: grid;
+.gridImagesDiv{
+  height: 80%;
+  display: flex;
   justify-content: center;
-  grid-template-areas:
-    "photo1 photo2 photo3"
-    "photo1 photo2 photo4";
+  align-items: center;
+}
+
+.gridImages {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(2, auto);
+  width: 60%;
+  height: 100%;
+
+}
+
+.col3{
+  display: flex;
+  flex-direction: column;
   gap: 20px;
 }
 
+
+.buttonGrid {
+  position: absolute;
+  z-index: 1;
+  margin-top: 400px;
+  margin-left: 2%;
+  width: 170px;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 700;
+  border: 0px;
+}
+
+.photos:hover{
+  opacity: 0.5;
+}
+
+.buttonGrid:hover{
+  cursor: pointer;
+}
 .bestsellers {
   display: flex;
   flex-direction: column;
@@ -389,17 +400,16 @@ html {
   border-radius: 5px;
   height: 52px;
   width: 151px;
-  background-color: #2DC071;
+  background-color: #2dc071;
   border: 0px;
 }
 .readMoreButton {
-  color: #2DC071;
+  color: #2dc071;
   font-weight: 700;
   border-radius: 5px;
   background-color: white;
   height: 52px;
   width: 171px;
-  border: 2px solid #2DC071;
+  border: 2px solid #2dc071;
   cursor: pointer;
-
 }
