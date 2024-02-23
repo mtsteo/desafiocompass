@@ -253,8 +253,15 @@ html {
   margin: 5%;
 }
 
-.card .imageCard {
+
+.imageCard {
   height: 20   rem;
+  transition: transform .2s;
+}
+
+.imageCard:hover {
+  transform: scale(1.1);
+
 }
 
 .preco {
