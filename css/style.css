@@ -212,7 +212,7 @@ html {
 }
 
 .editor .editorTitle {
-  margin-top: 10%;
+  margin-top: 5%;
   text-align: center;
 }
 
@@ -220,7 +220,7 @@ html {
   font-weight: 600;
 }
 
-.gridImagesDiv{
+.gridImagesDiv {
   height: 80%;
   display: flex;
   justify-content: center;
@@ -235,15 +235,13 @@ html {
   grid-template-columns: repeat(2, auto);
   width: 60%;
   height: 100%;
-
 }
 
-.col3{
+.col3 {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-
 
 .buttonGrid {
   position: absolute;
@@ -257,13 +255,14 @@ html {
   border: 0px;
 }
 
-.photos:hover{
+.photos:hover {
   opacity: 0.5;
 }
 
-.buttonGrid:hover{
+.buttonGrid:hover {
   cursor: pointer;
 }
+
 .bestsellers {
   display: flex;
   flex-direction: column;
@@ -353,6 +352,7 @@ html {
 
 .summer {
   display: flex;
+  justify-content: center;
   margin-top: 5%;
   width: 100vw;
   height: 100vh;
@@ -412,4 +412,79 @@ html {
   width: 171px;
   border: 2px solid #2dc071;
   cursor: pointer;
+}
+
+.featuredPost {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+.featuredPostTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 2%;
+  text-align: center;
+  width: 25%;
+}
+.featuredPostTitle h6 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #23a6f0;
+}
+
+.featuredPostTitle h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #252b42;
+}
+.featuredPostTitle p {
+  font-size: 14px;
+  font-weight: 400;
+  color: color#737373;
+}
+
+.postCards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 70vh;
+  margin-top: 5%;
+}
+
+.postCardsDiv {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, auto);
+  gap: 5%;
+  height: 100%;
+}
+
+.postCard {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5% 5%;
+}
+
+
+.selected {
+  color: #23a6f0;
+}
+
+.optionsCard small {
+  color: #737373;
+  margin: 0 5px;
+  font-size: 15px;
+  font-weight: 600;
 }
