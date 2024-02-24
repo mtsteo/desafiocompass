@@ -45,7 +45,7 @@ html {
   align-items: center;
 }
 
-.mail > mail {
+.email > mail {
   font-weight: 600;
   font-size: 14px;
 }
@@ -437,7 +437,6 @@ html {
 .summer {
   display: flex;
   justify-content: center;
-  margin-top: 5%;
   width: 100vw;
   height: 100vh;
 }
@@ -445,6 +444,7 @@ html {
 .summerDiv {
   margin: 0 5%;
   display: flex;
+  flex-direction: row;
 }
 
 .descriptionDiv {
@@ -502,7 +502,6 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   width: 100vw;
   height: 100vh;
 }
@@ -736,6 +735,11 @@ html {
   border-bottom-right-radius: 5px;
 }
 
+.footerContent {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+}
+
 .footerEnd {
   display: flex;
   justify-content: start;
@@ -774,4 +778,53 @@ html {
   .col3 {
     flex-direction: row;
   }
+
+  .banner1Description {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carousel1Banner {
+    width: 1135px;
+  }
+  
+  .carousel_2 {
+    padding-top: 5%;
+  }
+
+  .summerDiv {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+  }
+
+  .descriptionDiv {
+    margin-top: 5%;
+  }
+
+  .featuredPostTitle{
+    padding-top: 20%;
+  }
+
+  .postCardsDiv {
+    grid-template-columns: repeat(2, 349px);
+  }
+
+  .pageFooter {
+    padding-top: 70%;
+  }
+
+  .footerContent {
+  grid-template-columns: repeat(3, auto);
+  }
+
+  .column {
+    gap: 0px;
+  }
+
+}
+
+@media screen and (max-width: 880px) {
+  
 }
