@@ -45,12 +45,10 @@ html {
   align-items: center;
 }
 
-
 .mail > mail {
   font-weight: 600;
   font-size: 14px;
 }
-
 
 .phrasetext > p {
   display: flex;
@@ -88,7 +86,6 @@ html {
   width: 10%;
 }
 
-
 .menunav {
   display: flex;
   justify-content: space-between;
@@ -119,7 +116,6 @@ html {
 }
 
 .sign {
-  margin-left: 15%;
   margin-right: 5%;
 }
 
@@ -156,46 +152,62 @@ html {
 }
 
 .carrousel {
+  text-align: center;
   width: 100vw;
   height: 100vh;
 }
 
-.carousel1Div {
-  position: absolute;
+.carousel1Banner {
   display: flex;
-  margin-left: 20%;
-  margin-top: 15%;
-}
-.carousel1Image {
+  justify-content: center;
+  align-items: flex-end;
+  background-color: #23a6f0;
   width: 100vw;
-  height: 80%;
+  height: 90vh;
 }
 
-.carousel1Description {
+.banner1Description {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  width: 80%;
+  width: 35%;
+  align-items: flex-start;
+  margin-bottom: 15%;
 }
 
-.carousel1Description > h5 {
+.banner1Description > h5 {
   font-size: 16px;
   color: #ffffff;
 }
 
-.carousel1Description h1 {
+.banner1Description h1 {
   font-size: 50px;
   font-weight: 700;
   color: #ffffff;
 }
 
-.carousel1Description h4 {
-  font-size: 20px;
+.banner1Description h4 {
+  font-size: 14px;
+  font-weight: 400;
   color: #ffffff;
 }
 
-.buyMoreButton {
-  cursor: pointer;
+.shopNowButton {
+  color: white;
+  border-radius: 5px;
+  height: 62px;
+  width: 221px;
+  background-color: #2dc071;
+  border: 0px;
+}
+
+.shopNowButton h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.banner1Image {
+  height: 90%;
 }
 
 .editor {
@@ -728,4 +740,22 @@ html {
 .footerEnd h6 {
   color: #737373;
   margin-left: 15%;
+}
+
+@media screen and (max-width: 1135px) {
+  .phrasetext {
+    display: none;
+  }
+
+  .listItemsMenu {
+    margin-left: 5%;
+  }
+
+  .sign {
+    margin-left: 5%;
+  }
+
+  .bestsellersCards {
+    grid-template-columns: repeat(3, auto);
+  }
 }
