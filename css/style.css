@@ -14,7 +14,7 @@ html {
 .social {
   color: aliceblue;
   background-color: rgba(37, 43, 66, 1);
-  height: 2.5rem;
+  height: 6vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -344,6 +344,15 @@ html {
   text-align: center;
 }
 
+.colorSelector {
+  transition: transform 0.2s;
+}
+
+.colorSelector:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
 .carousel_2 {
   text-align: center;
   margin-top: 5%;
@@ -547,6 +556,7 @@ html {
 .postCard {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
+  height: fit-content;
 }
 
 .postCard:hover {
@@ -604,9 +614,10 @@ html {
   margin-top: 10%;
   display: flex;
   gap: 5%;
-  align-items: center;
+  align-items: end;
   justify-content: start;
   width: 100%;
+  height: auto;
 }
 
 .learnMore a {
