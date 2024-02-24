@@ -538,7 +538,7 @@ html {
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(3, 349px);
-  gap: 5%;
+  gap: 2%;
   height: 100%;
 }
 
