@@ -386,7 +386,7 @@ html {
   color: #ffffff;
 }
 
-.bannerPriceBtn{
+.bannerPriceBtn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -489,6 +489,21 @@ html {
   height: 100vh;
 }
 
+.buttonNews {
+  position: absolute;
+  margin: 1% 1%;
+  font-size: 10px;
+  font-weight: 700;
+  border: 0px;
+  width: 40px;
+  height: 20px;
+  background-color: #E74040;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
 .featuredPostTitle {
   display: flex;
   flex-direction: column;
@@ -525,7 +540,7 @@ html {
 .postCardsDiv {
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(3, 349px);
   gap: 5%;
   height: 100%;
 }
@@ -533,6 +548,10 @@ html {
 .postCard {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
+}
+
+.postCard:hover{
+  cursor: pointer;
 }
 
 .cardContent {
@@ -547,9 +566,61 @@ html {
   color: #23a6f0;
 }
 
-.optionsCard small {
+.optionsCard small a {
   color: #737373;
   margin: 0 5px;
   font-size: 15px;
   font-weight: 600;
+}
+.optionsCard small a:hover {
+  color: #23a6f0;
+}
+
+
+.cardContent h4 {
+  color: #252B42;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 5% 0;
+}
+.cardContent p {
+  color: #737373;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.dataCommentsDiv {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dataCommentsDiv small a {
+  text-decoration: none;
+  color: #737373;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.learnMore {
+  margin-top: 10% ;
+  display: flex;
+  gap: 5%;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+}
+
+.learnMore a {
+  color: #737373;
+  font-size: 14px;
+  font-weight: 700;
+}
+.learnMore a:hover {
+  color: #23a6f0;
+}
+
+.learnMore img {
+  width: 9px;
+  height: 16px;
 }

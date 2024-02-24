@@ -1,5 +1,5 @@
 finalizar botoes da summer section OK
 icone user no menu login OK
 divs nos banners do carrousel OK
-divs nas imagens dagrid da section editors
+divs nas imagens dagrid da section editors OK
 divs no banner dos segundo carousel 
