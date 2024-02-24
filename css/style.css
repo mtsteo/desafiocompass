@@ -232,13 +232,21 @@ html {
   align-items: center;
 }
 
+.editorColumns {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 2%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+
 .gridImages {
   display: flex;
   gap: 20px;
   justify-content: center;
   align-items: center;
-  grid-template-columns: repeat(2, auto);
-  width: 60%;
+  width: 80%;
   height: 100%;
 }
 
