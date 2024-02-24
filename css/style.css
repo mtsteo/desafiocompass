@@ -766,4 +766,12 @@ html {
   .bestsellersCards {
     grid-template-columns: repeat(3, auto);
   }
+
+  .editorColumns {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .col3 {
+    flex-direction: row;
+  }
 }
