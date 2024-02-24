@@ -98,33 +98,40 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 4em;
+  height: 5em;
 }
 
 .menu .logo {
   margin-left: 5%;
   width: 10%;
 }
-.menu .nav {
-  width: 50%;
-  margin-left: 5%;
-}
+
 
 .menunav {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
 }
-.menunav > li {
-  margin: 20px;
+
+.listItemsMenu {
+  width: 100%;
+  display: flex;
 }
-.menunav > li > a {
+
+.listItemsMenu > li {
+  list-style: none;
+  margin-left: 2%;
+}
+
+.listItemsMenu > li > a {
   color: #737373;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 700;
   text-decoration: none;
 }
 
-.menunav > li > select {
+.listItemsMenu > li > select {
   border: none;
   font-size: 14px;
 }
