@@ -21,23 +21,15 @@ html {
   width: 100vw;
 }
 
-.contact {
+.phone {
+  display: flex;
   margin-left: 5%;
-  display: flex;
-  flex-direction: row;
-  width: 30%;
-}
-
-.contact .phone {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 5%;
 }
 
 .phone > img {
   margin: 5px;
 }
+
 .phone > p {
   font-weight: 600;
   font-size: 14px;
@@ -53,22 +45,12 @@ html {
   align-items: center;
 }
 
-.mail > img {
-  margin: 5px;
-}
 
-.mail > p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
+.mail > mail {
   font-weight: 600;
   font-size: 14px;
 }
 
-.phrase {
-  width: 30%;
-}
 
 .phrasetext > p {
   display: flex;
