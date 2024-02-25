@@ -859,6 +859,10 @@ html {
 }
 
 @media screen and (max-width: 780px) {
+  .carousel {
+    position: relative;
+    width: 100vw;
+  }
   .banner1Image {
     display: none;
   }
@@ -964,6 +968,10 @@ html {
   .summerDescription {
     justify-content: center;
     align-items: center;
+    width: 90vw;
+  }
+
+  .summerImage {
     width: 90vw;
   }
 
