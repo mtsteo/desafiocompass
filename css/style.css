@@ -117,22 +117,15 @@ html {
 
 
 /* mobile menu here */
-
 .mobileListItemsMenu {
-  margin-top: 5%;
-  height: 100%;
+  display: flex;
 }
+
 
 .mobileListItemsMenu li {
   list-style: none;
-  margin-top: 20%;
 }
-.mobileListItemsMenu li select,
-.mobileListItemsMenu li a {
-  font-size: 1.5em;
-  font-weight: 600;
-  color: #737373;
-}
+
 
 /* mobile menu here */
 .sign {
@@ -174,13 +167,14 @@ html {
 .socialIcons {
   display: flex;
 }
+
+
 .socialIcons li {
   list-style: none;
 }
 
 /* mobile */
 .mobileSocialIcons {
-  display: flex;
   flex-direction: row;
 }
 
@@ -199,7 +193,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  background-color: #23a6f0;
+  background-color: #01b4da;
   width: 100vw;
   height: 90vh;
 }
@@ -796,6 +790,12 @@ html {
 .mobileSocialIcons {
   display: none;
 }
+.mobileListItemsMenu{
+  display: none;
+}
+
+
+
 
 @media screen and (max-width: 1135px) {
   .phrasetext {
@@ -865,9 +865,29 @@ html {
   .column {
     gap: 0px;
   }
+  
 }
 
+
 @media screen and (max-width: 780px) {
+
+  .mobileListItemsMenu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobileListItemsMenu li {
+    margin: 1em 0px;
+
+  }
+  .mobileListItemsMenu li a {
+
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 500;
+    color: #737373;
+  }
+
   .social {
     display: none;
   }
