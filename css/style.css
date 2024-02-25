@@ -952,4 +952,22 @@ html {
   .col3 {
     flex-direction: column;
   }
+  .carousel_2 {
+    padding-top: 50em;
+  }
+  .bannerDescription{
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    margin-bottom: 0px;
+  }
+
+  .bannerPriceBtn{
+    flex-direction: column;
+  }
+  .carouselBanner {
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+  }
 }
