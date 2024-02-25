@@ -115,6 +115,33 @@ html {
   font-size: 14px;
 }
 
+/* mobile menu here  */
+.mobileListItemsMenu {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.mobileListItemsMenu > li {
+  list-style: none;
+  margin-left: 2%;
+}
+
+.mobileListItemsMenu > li > a {
+  color: #737373;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.mobileListItemsMenu > li > select {
+  border: none;
+  font-size: 14px;
+}
+
+/* mobile menu here */
+
 .sign {
   margin-right: 5%;
 }
@@ -825,6 +852,36 @@ html {
 
 }
 
-@media screen and (max-width: 880px) {
-  
+@media screen and (max-width: 780px) {
+    
+    .social {
+      display: none;
+    }
+
+  .listItemsMenu {
+      display: none;
+    }
+    
+    .signInUp {
+      display: none;
+    }
+
+    .menu{
+      height: 40vh;
+      flex-direction: column;
+    }
+
+    .mobileListItemsMenu {
+      margin-top: 5%;
+      height: 100%;
+    }
+
+    .mobileListItemsMenu li {
+      margin-top: 20%;
+    }
+    .mobileListItemsMenu li select, .mobileListItemsMenu li a {
+      font-size: 1.5em;
+      font-weight: 600;
+      color: #737373;
+    }
 }
