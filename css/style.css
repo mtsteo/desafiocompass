@@ -345,7 +345,6 @@ html {
 }
 
 .imageCard {
-  height: 20 rem;
   transition: transform 0.2s;
 }
 
@@ -939,10 +938,11 @@ html {
   }
 
   .bestsellersCards {
+    padding-top: 5em;
     grid-template-columns: repeat(1, auto);
   }
   .card a img  {
-    width: 80vw ;
+    width: 70vw ;
   }
 
   .editorColumns img {
