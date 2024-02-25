@@ -970,4 +970,34 @@ html {
     align-items: center;
     height: 100vh;
   }
+
+  .summer{
+    padding-top: 90em;
+  }
+
+  .summerDescription {
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+  }
+
+  .summerDescription h1, h4 {
+    text-align: center;
+  }
+
+  .summerButtons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .buyMoreButton{
+    margin-bottom: 5%;
+  }
+
+  .featuredPost {
+    padding-top: 40em;
+  }
+  
 }
