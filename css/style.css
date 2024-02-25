@@ -284,23 +284,49 @@ html {
   gap: 20px;
 }
 
-.buttonGrid {
+.buttonGrid1 {
   position: absolute;
   z-index: 1;
-  margin-top: 400px;
-  margin-left: 2%;
   width: 170px;
   height: 48px;
   font-size: 16px;
   font-weight: 700;
   border: 0px;
+  margin-left: -400px;
+  margin-top: 400px;
 }
 
+.buttonGrid2 {
+  position: absolute;
+  z-index: 1;
+  width: 170px;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 700;
+  border: 0px;
+  margin-left: -200px ;
+  margin-top: 400px;
+}
+
+.buttonGrid3 {
+  position: absolute;
+  z-index: 1;
+  width: 170px;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 700;
+  border: 0px;
+  margin-left: -200px ;
+  margin-top: 150px;
+}
+.image3 {
+  position: relative;
+}
 .photos:hover {
   opacity: 0.5;
 }
 
-.buttonGrid:hover {
+.buttonGrid1, .buttonGrid2, .buttonGrid3:hover {
   cursor: pointer;
 }
 
@@ -931,7 +957,7 @@ html {
     padding-top: 80rem;
   }
 
-  .bestsellersTitle{
+  .bestsellersTitle {
     width: 90vw;
   }
 
@@ -942,8 +968,8 @@ html {
     grid-template-columns: repeat(1, auto);
   }
 
-  .card{
-    margin-top: 5%; 
+  .card {
+    margin-top: 5%;
   }
 
   .card a img {
