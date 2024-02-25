@@ -115,33 +115,26 @@ html {
   font-size: 14px;
 }
 
-/* mobile menu here  */
-.mobileListItemsMenu {
-  display: block;
-  justify-content: center;
-  align-items: center;
-  
-}
-
-.mobileListItemsMenu > li {
-  list-style: none;
-  margin-left: 2%;
-}
-
-.mobileListItemsMenu > li > a {
-  color: #737373;
-  font-size: 14px;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.mobileListItemsMenu > li > select {
-  border: none;
-  font-size: 14px;
-}
 
 /* mobile menu here */
 
+.mobileListItemsMenu {
+  margin-top: 5%;
+  height: 100%;
+}
+
+.mobileListItemsMenu li {
+  list-style: none;
+  margin-top: 20%;
+}
+.mobileListItemsMenu li select,
+.mobileListItemsMenu li a {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #737373;
+}
+
+/* mobile menu here */
 .sign {
   margin-right: 5%;
 }
@@ -177,6 +170,24 @@ html {
   font-weight: 600;
   text-decoration: none;
 }
+
+.socialIcons {
+  display: flex;
+}
+.socialIcons li {
+  list-style: none;
+}
+
+/* mobile */
+.mobileSocialIcons {
+  display: flex;
+  flex-direction: row;
+}
+
+.mobileSocialIcons li {
+  list-style: none;
+}
+/* mobile */
 
 .carrousel {
   text-align: center;
@@ -781,6 +792,11 @@ html {
   margin-left: 15%;
 }
 
+
+.mobileSocialIcons {
+  display: none;
+}
+
 @media screen and (max-width: 1135px) {
   .phrasetext {
     display: none;
@@ -814,7 +830,7 @@ html {
   .carousel1Banner {
     width: 1135px;
   }
-  
+
   .carousel_2 {
     padding-top: 5%;
   }
@@ -830,7 +846,7 @@ html {
     margin-top: 5%;
   }
 
-  .featuredPostTitle{
+  .featuredPostTitle {
     padding-top: 20%;
   }
 
@@ -843,45 +859,42 @@ html {
   }
 
   .footerContent {
-  grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, auto);
   }
 
   .column {
     gap: 0px;
   }
-
 }
 
 @media screen and (max-width: 780px) {
-    
-    .social {
-      display: none;
-    }
+  .social {
+    display: none;
+  }
+
+  .mobileSocialIcons {
+    margin-right: 3rem;
+    display: flex;
+  }
+  .mobileSocialIcons li {
+    margin: 15%;
+  }
+
 
   .listItemsMenu {
-      display: none;
-    }
-    
-    .signInUp {
-      display: none;
-    }
+    display: none;
+  }
 
-    .menu{
-      height: 40vh;
-      flex-direction: column;
-    }
+  .signInUp {
+    display: none;
+  }
 
-    .mobileListItemsMenu {
-      margin-top: 5%;
-      height: 100%;
-    }
+  .socialIcons {
+    display: none;
+  }
 
-    .mobileListItemsMenu li {
-      margin-top: 20%;
-    }
-    .mobileListItemsMenu li select, .mobileListItemsMenu li a {
-      font-size: 1.5em;
-      font-weight: 600;
-      color: #737373;
-    }
+  .menu {
+    height: 40vh;
+    flex-direction: column;
+  }
 }
