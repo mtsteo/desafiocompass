@@ -871,6 +871,14 @@ html {
 
 @media screen and (max-width: 780px) {
 
+  .banner1Image {
+    display: none;
+  }
+
+.carousel1Banner {
+  justify-content: inherit;
+}
+
   .mobileListItemsMenu {
     display: flex;
     flex-direction: column;
