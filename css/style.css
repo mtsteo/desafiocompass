@@ -377,7 +377,10 @@ html {
 }
 
 .colorsProd {
+  display: flex;
   text-align: center;
+  justify-content: center;
+  padding-top: 5%;
 }
 
 .colorSelector {
@@ -877,11 +880,11 @@ html {
   }
 
   .mobileListItemsMenu li {
-    margin: 1em 0px;
+    margin: 10% 0px;
   }
   .mobileListItemsMenu li a {
     text-decoration: none;
-    font-size: 30px;
+    font-size: 1.5em;
     font-weight: 500;
     color: #737373;
   }
@@ -911,7 +914,7 @@ html {
   }
 
   .menu {
-    height: 40vh;
+    height: 50%;
     flex-direction: column;
   }
 
@@ -920,15 +923,15 @@ html {
     justify-content: center;
     flex-direction: column;
     grid-template-columns: repeat(1, auto);
-    row-gap: 2em;
+    row-gap: 30px;
   }
 
   .bestsellers {
-    padding-top: 80em;
+    padding-top: 80rem;
   }
 
   .bestsellersCards {
-    padding-top: 5em;
+    padding-top: 5%;
     grid-template-columns: repeat(1, auto);
   }
   .card a img {
@@ -950,12 +953,19 @@ html {
     align-items: center;
     width: 90vw;
     margin-bottom: 0px;
+    gap: 0px;
+    padding-top: 20%;
+  }
+
+  .bannerImage {
+    height: 60%;
   }
 
   .bannerPriceBtn {
     flex-direction: column;
   }
   .carouselBanner {
+    justify-content: space-between;
     flex-direction: column;
     align-items: center;
     height: 100vh;
