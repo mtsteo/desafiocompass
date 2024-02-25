@@ -115,17 +115,14 @@ html {
   font-size: 14px;
 }
 
-
 /* mobile menu here */
 .mobileListItemsMenu {
   display: flex;
 }
 
-
 .mobileListItemsMenu li {
   list-style: none;
 }
-
 
 /* mobile menu here */
 .sign {
@@ -167,7 +164,6 @@ html {
 .socialIcons {
   display: flex;
 }
-
 
 .socialIcons li {
   list-style: none;
@@ -785,16 +781,12 @@ html {
   margin-left: 15%;
 }
 
-
 .mobileSocialIcons {
   display: none;
 }
-.mobileListItemsMenu{
+.mobileListItemsMenu {
   display: none;
 }
-
-
-
 
 @media screen and (max-width: 1135px) {
   .phrasetext {
@@ -864,19 +856,16 @@ html {
   .column {
     gap: 0px;
   }
-  
 }
 
-
 @media screen and (max-width: 780px) {
-
   .banner1Image {
     display: none;
   }
 
-.carousel1Banner {
-  justify-content: inherit;
-}
+  .carousel1Banner {
+    justify-content: inherit;
+  }
 
   .mobileListItemsMenu {
     display: flex;
@@ -885,10 +874,8 @@ html {
 
   .mobileListItemsMenu li {
     margin: 1em 0px;
-
   }
   .mobileListItemsMenu li a {
-
     text-decoration: none;
     font-size: 30px;
     font-weight: 500;
@@ -906,7 +893,6 @@ html {
   .mobileSocialIcons li {
     margin: 15%;
   }
-
 
   .listItemsMenu {
     display: none;
@@ -929,7 +915,7 @@ html {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    grid-template-columns: repeat(1,auto);
+    grid-template-columns: repeat(1, auto);
     row-gap: 2em;
   }
 
@@ -941,8 +927,8 @@ html {
     padding-top: 5em;
     grid-template-columns: repeat(1, auto);
   }
-  .card a img  {
-    width: 70vw ;
+  .card a img {
+    width: 70vw;
   }
 
   .editorColumns img {
@@ -955,14 +941,14 @@ html {
   .carousel_2 {
     padding-top: 50em;
   }
-  .bannerDescription{
+  .bannerDescription {
     justify-content: center;
     align-items: center;
     width: 90vw;
     margin-bottom: 0px;
   }
 
-  .bannerPriceBtn{
+  .bannerPriceBtn {
     flex-direction: column;
   }
   .carouselBanner {
@@ -971,7 +957,7 @@ html {
     height: 100vh;
   }
 
-  .summer{
+  .summer {
     padding-top: 90em;
   }
 
@@ -981,23 +967,63 @@ html {
     width: 90vw;
   }
 
-  .summerDescription h1, h4 {
+  .summerDescription h1,
+  h4 {
     text-align: center;
   }
 
-  .summerButtons{
+  .summerButtons {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
 
-  .buyMoreButton{
+  .buyMoreButton {
     margin-bottom: 5%;
   }
 
   .featuredPost {
     padding-top: 40em;
   }
-  
+
+  .featuredPostTitle {
+    width: 60vw;
+  }
+
+  .postCardsDiv {
+    grid-template-columns: repeat(1, auto);
+  }
+
+  .postCard {
+    width: 350px;
+  }
+
+  .pageFooter {
+    margin-top: 100rem;
+  }
+
+  .headContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .iconsFooter {
+    display: flex;
+  }
+
+  .footerContent {
+    grid-template-columns: repeat(1, auto);
+    row-gap: 2em;
+  }
+
+  .getInTouch {
+    height: 3em;
+    display: flex;
+  }
+  .footerEnd {
+    margin-top: 30em;
+  }
 }
