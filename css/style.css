@@ -327,7 +327,6 @@ html {
 }
 
 .bestsellersCards div {
-  width: 239px;
   height: 615px;
   border: 0px;
 }
@@ -377,7 +376,6 @@ html {
 }
 
 .colorsProd {
-  display: flex;
   text-align: center;
   justify-content: center;
   padding-top: 5%;
@@ -918,6 +916,9 @@ html {
     flex-direction: column;
   }
 
+  .editorTitle {
+    width: 90vw;
+  }
   .editorColumns {
     display: flex;
     justify-content: center;
@@ -930,9 +931,12 @@ html {
     padding-top: 80rem;
   }
 
+  .bestsellersTitle{
+    width: 90vw;
+  }
+
   .bestsellersCards {
     display: grid;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     grid-template-columns: repeat(1, auto);
@@ -980,7 +984,7 @@ html {
   }
 
   .summer {
-    padding-top: 90em;
+    padding-top: 80em;
   }
 
   .summerDescription {
@@ -1010,7 +1014,7 @@ html {
   }
 
   .featuredPost {
-    padding-top: 40em;
+    padding-top: 30em;
   }
 
   .featuredPostTitle {
@@ -1026,7 +1030,7 @@ html {
   }
 
   .pageFooter {
-    margin-top: 100rem;
+    margin-top: 90em;
   }
 
   .headContent {
