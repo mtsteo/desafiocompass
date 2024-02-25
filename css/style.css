@@ -931,9 +931,17 @@ html {
   }
 
   .bestsellersCards {
-    padding-top: 5%;
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     grid-template-columns: repeat(1, auto);
   }
+
+  .card{
+    margin-top: 5%; 
+  }
+
   .card a img {
     width: 70vw;
   }
