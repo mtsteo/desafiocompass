@@ -4,6 +4,8 @@ const loginButton = document.getElementById(
   "loginButton"
 )! as HTMLButtonElement;
 const closeButton = document.getElementsByClassName("close")[0] as HTMLElement;
+const singInUp = document.getElementById("sign")! as HTMLDivElement;
+const greeting = document.getElementById("greetings")! as HTMLDivElement;
 
 const EMAIL = "mateus@compass.com";
 const PASSWORD = "compass";
@@ -28,14 +30,17 @@ loginButton.onclick = (e: MouseEvent) => {
   let password = (<HTMLInputElement>document.getElementById("passwordInput"))
     .value;
 
-  loginValidate(email, password);
-};
+  const isLogged = loginValidate(email, password);
 
-
-function loginValidate(email: string, password: string) {
-  if (email === EMAIL && password === PASSWORD) {
-    console.log("logged!");
-  } else {
-    alert("Fail! Check your data!")
+  if (isLogged) {
+  
   }
-}
+
+  function loginValidate(email: string, password: string) {
+    if (email === EMAIL && password === PASSWORD) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+};

@@ -12,7 +12,7 @@ html {
 }
 
 .loginModal {
-  display: block;
+  display: none;
   position: fixed;
   z-index: 1;
   left: 0;
@@ -222,6 +222,21 @@ html {
   font-size: 14px;
   font-weight: 600;
   text-decoration: none;
+}
+
+.greetingsDiv {
+  display: none;
+  gap: 5px;
+}
+
+.greeting, .greetingEmail {
+  color: #23a6f0;
+  font-weight: 600;
+}
+
+.logoutButton {
+  color: #737373;
+  margin-left: 10%;
 }
 
 .socialIcons {

@@ -3,6 +3,8 @@ const modal = document.getElementById("modal");
 const loginLink = document.getElementById("loginLink");
 const loginButton = document.getElementById("loginButton");
 const closeButton = document.getElementsByClassName("close")[0];
+const singInUp = document.getElementById("sign");
+const greeting = document.getElementById("greetings");
 const EMAIL = "mateus@compass.com";
 const PASSWORD = "compass";
 loginLink.onclick = () => {
@@ -21,13 +23,15 @@ loginButton.onclick = (e) => {
     let email = document.getElementById("emailInput").value;
     let password = document.getElementById("passwordInput")
         .value;
-    loginValidate(email, password);
+    const isLogged = loginValidate(email, password);
+    if (isLogged) {
+    }
+    function loginValidate(email, password) {
+        if (email === EMAIL && password === PASSWORD) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
 };
-function loginValidate(email, password) {
-    if (email === EMAIL && password === PASSWORD) {
-        console.log("logged!");
-    }
-    else {
-        alert("Fail! Check your data!");
-    }
-}
