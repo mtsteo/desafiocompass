@@ -25,8 +25,10 @@ function loginValidate(email, password) {
     else {
         return false;
     }
-}
-;
+};
+
+
+
 loginButton.addEventListener("click", function (e) {
     e.preventDefault();
     let email = document.getElementById("emailInput").value;
