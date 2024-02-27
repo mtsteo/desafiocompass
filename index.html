@@ -21,6 +21,7 @@
     <title>Ecomerce</title>
   </head>
   <body>
+    
     <div class="social">
       <div class="phone">
         <img src="./img/icons/phone.png" alt="" />
@@ -79,7 +80,7 @@
           <ul>
             <div class="signInUp">
               <img src="./img/icons/user.png" alt="User" />
-              <a href="">Login </a>
+              <a id="loginLink" onclick="">Login </a>
               /
               <a href="">Register</a>
             </div>
@@ -111,7 +112,6 @@
           </ul>
         </div>
       </nav>
-      <!-- MENU MOBILE HERE -->
       <div class="mobileListItemsMenu">
         <li><a href="">Home</a></li>
         <li><a href="#">Product</a></li>
@@ -119,9 +119,23 @@
         <li><a href="">Contact</a></li>
       </div>
 
-      <!-- MENU MOBILE HERE  -->
     </div>
+
     <section class="carrousel">
+      <div id="modal" class="loginModal">
+        <div class="modalContent">
+          <span class="close">&times;</span>
+          <div class="loginFormDiv">
+            <form class="loginForm" action="">
+              <h3 class="loginTitle">Bandage</h3>
+              <input type="text" id="inputForm" class="emailInput" placeholder="Type your E-mail...">
+              <input type="text" id="inputForm" class="passwordInput" placeholder="Type your Password...">
+              <button class="loginButton" type="submit">Login</button>
+            </form>
+          </div>
+        </div>
+       
+      </div>
       <div
         id="carouselHome"
         class="carousel slide carrousel-t"
@@ -708,7 +722,7 @@
         <h6>Made With Love By Finland All Right Reserved</h6>
       </div>
     </footer>
-    <script src="js/index.js"></script>
+    <script src="dist/index.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
