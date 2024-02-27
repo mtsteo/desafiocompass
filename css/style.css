@@ -55,7 +55,7 @@ html {
 .loginTitle {
   font-weight: 700;
 }
-.loginForm #inputForm {
+ .emailInput, .passwordInput {
   border: 1px solid #e6e6e6;
   height: 3rem;
   width: 100%;
