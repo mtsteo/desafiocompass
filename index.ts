@@ -4,7 +4,7 @@ const loginButton = document.getElementById(
   "loginButton"
 )! as HTMLButtonElement;
 const closeButton = document.getElementsByClassName("close")[0] as HTMLElement;
-const singInUp = document.getElementById("sign")! as HTMLDivElement;
+const singInUp = document.getElementById("signInUp")! as HTMLDivElement;
 const greeting = document.getElementById("greetings")! as HTMLDivElement;
 
 const EMAIL = "mateus@compass.com";
@@ -24,23 +24,41 @@ window.onclick = function (event: MouseEvent) {
   }
 };
 
-loginButton.onclick = (e: MouseEvent) => {
-  e.preventDefault();
+
+function loginValidate(email: string, password: string) {
+  if (email === EMAIL && password === PASSWORD) {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+
+
+loginButton.addEventListener("click", function (e: MouseEvent) {
+  e.preventDefault()
   let email = (<HTMLInputElement>document.getElementById("emailInput")).value;
   let password = (<HTMLInputElement>document.getElementById("passwordInput"))
     .value;
 
+
   const isLogged = loginValidate(email, password);
 
   if (isLogged) {
-  
-  }
 
-  function loginValidate(email: string, password: string) {
-    if (email === EMAIL && password === PASSWORD) {
-      return true;
-    } else {
-      return false;
-    }
-  }
-};
+    setTimeout(() => {
+      singInUp.style.display = "none"
+
+      greeting.style.display = "flex"
+
+      modal.style.display = "none";
+    }, 2000);
+
+
+
+  } else console.log("deuerrado!")
+})
+
+
+
+

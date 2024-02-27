@@ -227,6 +227,7 @@ html {
 .greetingsDiv {
   display: none;
   gap: 5px;
+  margin-right: 5%;
 }
 
 .greeting, .greetingEmail {
