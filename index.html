@@ -21,7 +21,6 @@
     <title>Ecomerce</title>
   </head>
   <body>
-    
     <div class="social">
       <div class="phone">
         <img src="./img/icons/phone.png" alt="" />
@@ -76,17 +75,24 @@
           <li><a href="">Pages</a></li>
         </div>
         <div id="greetings" class="greetingsDiv">
-          <h6 class="greeting">Hello, </h6>
-          <h6 class="greetingEmail">Mateus@compass.com</h6>
-          <h6 class="logoutButton">Logout</h6>
+          <h6 class="greeting">Hello,</h6>
+          <h6 class="greetingEmail">Mateus@compass.com!</h6>
+          <a href="#">
+            <img
+              src="./img/icons/logout.png"
+              alt="logout"
+              id="logoutButton"
+              class="logoutButton"
+            />
+          </a>
         </div>
         <div id="sign" class="sign">
           <ul>
             <div id="signInUp" class="signInUp">
               <img src="./img/icons/user.png" alt="User" />
-              <a id="loginLink" onclick="">Login </a>
+              <a id="loginLink" href="#" onclick="">Login </a>
               /
-              <a href="">Register</a>
+              <a id="registerLink" class="registerLink" href="#">Register</a>
             </div>
             <div class="socialIcons">
               <li>
@@ -115,7 +121,6 @@
             </div>
           </ul>
         </div>
-        
       </nav>
       <div class="mobileListItemsMenu">
         <li><a href="">Home</a></li>
@@ -123,7 +128,6 @@
         <li><a href="">Pricing</a></li>
         <li><a href="">Contact</a></li>
       </div>
-
     </div>
 
     <section class="carrousel">
@@ -131,15 +135,26 @@
         <div class="modalContent">
           <span class="close">&times;</span>
           <div class="loginFormDiv">
-            <form class="loginForm" action="" method="POST" >
+            <form class="loginForm" action="" method="POST">
               <h3 class="loginTitle">Bandage</h3>
-              <input type="email" id="emailInput" class="emailInput" placeholder="Type your E-mail...">
-              <input type="password" id="passwordInput" class="passwordInput" placeholder="Type your Password...">
-              <button id="loginButton" class="loginButton" type="submit">Login</button>
+              <input
+                type="email"
+                id="emailInput"
+                class="emailInput"
+                placeholder="Type your E-mail..."
+              />
+              <input
+                type="password"
+                id="passwordInput"
+                class="passwordInput"
+                placeholder="Type your Password..."
+              />
+              <button id="loginButton" class="loginButton" type="submit">
+                LOGIN
+              </button>
             </form>
           </div>
         </div>
-       
       </div>
       <div
         id="carouselHome"
@@ -239,7 +254,6 @@
           <div class="image4">
             <img class="photos" src="./img/editor/photo4.png" alt="" />
             <button class="buttonGrid3">KIDS</button>
-
           </div>
         </div>
       </div>

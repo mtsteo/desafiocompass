@@ -3,6 +3,7 @@ const loginLink = document.getElementById("loginLink")! as HTMLElement;
 const loginButton = document.getElementById(
   "loginButton"
 )! as HTMLButtonElement;
+const logoutButton = document.getElementById("logoutButton")! as HTMLElement;
 const closeButton = document.getElementsByClassName("close")[0] as HTMLElement;
 const singInUp = document.getElementById("signInUp")! as HTMLDivElement;
 const greeting = document.getElementById("greetings")! as HTMLDivElement;
@@ -25,40 +26,42 @@ window.onclick = function (event: MouseEvent) {
 };
 
 
+
 function loginValidate(email: string, password: string) {
   if (email === EMAIL && password === PASSWORD) {
     return true;
   } else {
     return false;
   }
-};
-
-
+}
 
 loginButton.addEventListener("click", function (e: MouseEvent) {
-  e.preventDefault()
+  e.preventDefault();
   let email = (<HTMLInputElement>document.getElementById("emailInput")).value;
   let password = (<HTMLInputElement>document.getElementById("passwordInput"))
     .value;
 
-
   const isLogged = loginValidate(email, password);
 
   if (isLogged) {
-
     setTimeout(() => {
-      singInUp.style.display = "none"
+      singInUp.style.display = "none";
 
-      greeting.style.display = "flex"
+      greeting.style.display = "flex";
 
       modal.style.display = "none";
     }, 2000);
+  } else alert("Error! Verify your data.");
+});
 
 
 
-  } else console.log("deuerrado!")
-})
+logoutButton.addEventListener("click", () => {
+  setTimeout(() => {
+    singInUp.style.display = "flex";
 
+    greeting.style.display = "none";
 
-
-
+    modal.style.display = "none";
+  }, 2000);
+});

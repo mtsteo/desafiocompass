@@ -2,6 +2,7 @@
 const modal = document.getElementById("modal");
 const loginLink = document.getElementById("loginLink");
 const loginButton = document.getElementById("loginButton");
+const logoutButton = document.getElementById("logoutButton");
 const closeButton = document.getElementsByClassName("close")[0];
 const singInUp = document.getElementById("signInUp");
 const greeting = document.getElementById("greetings");
@@ -25,10 +26,7 @@ function loginValidate(email, password) {
     else {
         return false;
     }
-};
-
-
-
+}
 loginButton.addEventListener("click", function (e) {
     e.preventDefault();
     let email = document.getElementById("emailInput").value;
@@ -43,5 +41,12 @@ loginButton.addEventListener("click", function (e) {
         }, 2000);
     }
     else
-        console.log("deuerrado!");
+        alert("Error! Verify your data.");
+});
+logoutButton.addEventListener("click", () => {
+    setTimeout(() => {
+        singInUp.style.display = "flex";
+        greeting.style.display = "none";
+        modal.style.display = "none";
+    }, 2000);
 });
