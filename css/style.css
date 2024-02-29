@@ -431,7 +431,7 @@ html {
   width: 70%;
   display: grid;
   grid-template-columns: repeat(4, auto);
-  gap: 2%;
+  gap: 1.5em;
   justify-content: center;
   align-items: center;
   margin-top: 5%;
@@ -587,7 +587,6 @@ html {
 }
 
 .descriptionDiv {
-  margin-left: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1085,7 +1084,7 @@ html {
     flex-direction: column;
   }
   .carousel_2 {
-    padding-top: 50em;
+    padding-top: 2em;
   }
   .bannerDescription {
     justify-content: center;
@@ -1111,7 +1110,7 @@ html {
   }
 
   .summer {
-    padding-top: 80em;
+    padding-top: 15em;
   }
 
   .summerDescription {
@@ -1141,7 +1140,7 @@ html {
   }
 
   .featuredPost {
-    padding-top: 30em;
+    padding-top: 15em;
   }
 
   .featuredPostTitle {
@@ -1181,6 +1180,6 @@ html {
     display: flex;
   }
   .footerEnd {
-    margin-top: 30em;
+    margin-top: 35em;
   }
 }
